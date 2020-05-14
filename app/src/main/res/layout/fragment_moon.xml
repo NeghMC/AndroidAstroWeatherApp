@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/fragment_background_padding"
+        android:paddingLeft="@dimen/fragment_background_padding"
+        android:paddingRight="@dimen/fragment_background_padding">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/moon_fragment_bg"
+            android:id="@+id/bg" />
+
+        <ImageView
+            android:id="@+id/sun_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:scaleType="fitStart"
+            android:src="@drawable/ic_moon"
+            android:layout_alignTop="@id/bg"
+            android:layout_alignLeft="@id/bg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:fontFamily="@font/lora_bold"
+            android:paddingLeft="20dp"
+            android:layout_marginBottom="5dp"
+            android:text="Moonrise:"
+            android:textColor="@color/moonIcon"
+            android:textSize="22sp"
+            android:layout_below="@id/sun_img"
+            android:id="@+id/sunrise_time_label" />
+
+        <TextView
+            android:id="@+id/moonrise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lora_bold"
+            android:gravity="center"
+            android:text="0000"
+            android:textColor="@android:color/black"
+            android:textSize="22sp"
+            android:layout_alignRight="@id/bg"
+            android:paddingEnd="20dp"
+            android:layout_alignTop="@id/sunrise_time_label" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:fontFamily="@font/lora_bold"
+            android:paddingLeft="20dp"
+            android:layout_marginBottom="5dp"
+            android:text="Moonset:"
+            android:textColor="@color/moonIcon"
+            android:textSize="22sp"
+            android:layout_below="@id/sunrise_time_label"
+            android:id="@+id/sunrise_azimuth_label" />
+
+        <TextView
+            android:id="@+id/moonset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/sunrise_azimuth_label"
+            android:layout_alignRight="@id/bg"
+            android:fontFamily="@font/lora_bold"
+            android:gravity="center"
+            android:paddingEnd="20dp"
+            android:text="00:00:00"
+            android:textColor="@android:color/black"
+            android:textSize="22sp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:fontFamily="@font/lora_bold"
+            android:paddingLeft="20dp"
+            android:layout_marginBottom="5dp"
+            android:text="New moon:"
+            android:textColor="@color/moonIcon"
+            android:textSize="22sp"
+            android:layout_below="@id/sunrise_azimuth_label"
+            android:id="@+id/sunset_time_label" />
+
+        <TextView
+            android:id="@+id/new_moon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lora_bold"
+            android:gravity="center"
+            android:text="00:00:00"
+            android:textColor="@android:color/black"
+            android:textSize="22sp"
+            android:layout_alignRight="@id/bg"
+            android:paddingEnd="20dp"
+            android:layout_alignTop="@id/sunset_time_label" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:fontFamily="@font/lora_bold"
+            android:paddingLeft="20dp"
+            android:layout_marginBottom="5dp"
+            android:text="Full moon:"
+            android:textColor="@color/moonIcon"
+            android:textSize="22sp"
+            android:layout_below="@id/sunset_time_label"
+            android:id="@+id/sunset_azimuth_label" />
+
+        <TextView
+            android:id="@+id/full_moon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lora_bold"
+            android:gravity="center"
+            android:text="00:00:00"
+            android:textColor="@android:color/black"
+            android:textSize="22sp"
+            android:layout_alignRight="@id/bg"
+            android:paddingEnd="20dp"
+            android:layout_alignTop="@id/sunset_azimuth_label" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:fontFamily="@font/lora_bold"
+            android:paddingLeft="20dp"
+            android:layout_marginBottom="5dp"
+            android:text="Phase:"
+            android:textColor="@color/moonIcon"
+            android:textSize="22sp"
+            android:layout_below="@id/sunset_azimuth_label"
+            android:id="@+id/twilight_sun_label" />
+
+        <TextView
+            android:id="@+id/phase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lora_bold"
+            android:gravity="center"
+            android:text="00:00:00"
+            android:textColor="@android:color/black"
+            android:textSize="22sp"
+            android:layout_alignRight="@id/bg"
+            android:paddingEnd="20dp"
+            android:layout_alignTop="@id/twilight_sun_label" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:fontFamily="@font/lora_bold"
+            android:paddingLeft="20dp"
+            android:layout_marginBottom="5dp"
+            android:text="Syndodic day:"
+            android:textColor="@color/moonIcon"
+            android:textSize="22sp"
+            android:layout_below="@id/twilight_sun_label"
+            android:id="@+id/civil_dawn_label" />
+
+        <TextView
+            android:id="@+id/syndodic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lora_bold"
+            android:gravity="center"
+            android:text="00:00:00"
+            android:textColor="@android:color/black"
+            android:textSize="22sp"
+            android:layout_alignRight="@id/bg"
+            android:paddingEnd="20dp"
+            android:layout_alignTop="@id/civil_dawn_label" />
+
+    </RelativeLayout>
+</layout>

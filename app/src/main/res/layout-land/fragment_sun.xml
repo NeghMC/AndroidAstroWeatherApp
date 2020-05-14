@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/fragment_background_padding"
+        android:paddingLeft="@dimen/fragment_background_padding"
+        android:paddingRight="@dimen/fragment_background_padding"
+        android:paddingTop="@dimen/fragment_background_padding"
+        tools:context=".fragments.SunFragment">
+
+        <ImageView
+            android:id="@+id/bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/sun_fragment_bg" />
+
+
+        <ImageView
+            android:id="@+id/sun_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:scaleType="fitStart"
+            android:src="@drawable/ic_sun"
+            android:layout_alignLeft="@id/bg"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:fontFamily="@font/lora_bold"
+            android:paddingLeft="20dp"
+            android:layout_marginBottom="5dp"
+            android:text="Sunrise time:"
+            android:textColor="@color/sunIcon"
+            android:textSize="22sp"
+            android:layout_toEndOf="@id/sun_img"
+            android:id="@+id/sunrise_time_label"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/sunrise_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lora_bold"
+            android:gravity="center"
+            android:text="00:00:00"
+            android:textColor="@android:color/black"
+            android:textSize="22sp"
+            android:layout_alignRight="@id/bg"
+            android:paddingEnd="20dp"
+            android:layout_alignTop="@id/sunrise_time_label" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:fontFamily="@font/lora_bold"
+            android:paddingLeft="20dp"
+            android:layout_marginBottom="5dp"
+            android:text="Sunrise azimuth:"
+            android:textColor="@color/sunIcon"
+            android:textSize="22sp"
+            android:layout_below="@id/sunrise_time_label"
+            android:layout_toEndOf="@id/sun_img"
+            android:id="@+id/sunrise_azimuth_label" />
+
+        <TextView
+            android:id="@+id/sunrise_azimuth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lora_bold"
+            android:gravity="center"
+            android:text="00:00:00"
+            android:textColor="@android:color/black"
+            android:textSize="22sp"
+            android:layout_alignRight="@id/bg"
+            android:paddingEnd="20dp"
+            android:layout_alignTop="@id/sunrise_azimuth_label" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:fontFamily="@font/lora_bold"
+            android:paddingLeft="20dp"
+            android:layout_marginBottom="5dp"
+            android:text="Sunset time:"
+            android:textColor="@color/sunIcon"
+            android:textSize="22sp"
+            android:layout_below="@id/sunrise_azimuth_label"
+            android:layout_toEndOf="@id/sun_img"
+            android:id="@+id/sunset_time_label" />
+
+        <TextView
+            android:id="@+id/sunset_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lora_bold"
+            android:gravity="center"
+            android:text="00:00:00"
+            android:textColor="@android:color/black"
+            android:textSize="22sp"
+            android:layout_alignRight="@id/bg"
+            android:paddingEnd="20dp"
+            android:layout_alignTop="@id/sunset_time_label" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:fontFamily="@font/lora_bold"
+            android:paddingLeft="20dp"
+            android:layout_marginBottom="5dp"
+            android:text="Sunset azimuth:"
+            android:textColor="@color/sunIcon"
+            android:textSize="22sp"
+            android:layout_below="@id/sunset_time_label"
+            android:layout_toEndOf="@id/sun_img"
+            android:id="@+id/sunset_azimuth_label" />
+
+        <TextView
+            android:id="@+id/sunset_azimuth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lora_bold"
+            android:gravity="center"
+            android:text="00:00:00"
+            android:textColor="@android:color/black"
+            android:textSize="22sp"
+            android:layout_alignRight="@id/bg"
+            android:paddingEnd="20dp"
+            android:layout_alignTop="@id/sunset_azimuth_label" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:fontFamily="@font/lora_bold"
+            android:paddingLeft="20dp"
+            android:layout_marginBottom="5dp"
+            android:text="Twilight:"
+            android:textColor="@color/sunIcon"
+            android:textSize="22sp"
+            android:layout_below="@id/sunset_azimuth_label"
+            android:layout_toEndOf="@id/sun_img"
+            android:id="@+id/twilight_sun_label" />
+
+        <TextView
+            android:id="@+id/twilight_sun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lora_bold"
+            android:gravity="center"
+            android:text="00:00:00"
+            android:textColor="@android:color/black"
+            android:textSize="22sp"
+            android:layout_alignRight="@id/bg"
+            android:paddingEnd="20dp"
+            android:layout_alignTop="@id/twilight_sun_label" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:fontFamily="@font/lora_bold"
+            android:paddingLeft="20dp"
+            android:layout_marginBottom="5dp"
+            android:text="Civil down:"
+            android:textColor="@color/sunIcon"
+            android:textSize="22sp"
+            android:layout_below="@id/twilight_sun_label"
+            android:layout_toEndOf="@id/sun_img"
+            android:id="@+id/civil_dawn_label" />
+
+        <TextView
+            android:id="@+id/civil_dawn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lora_bold"
+            android:gravity="center"
+            android:text="00:00:00"
+            android:textColor="@android:color/black"
+            android:textSize="22sp"
+            android:layout_alignRight="@id/bg"
+            android:paddingEnd="20dp"
+            android:layout_alignTop="@id/civil_dawn_label" />
+
+    </RelativeLayout>
+</layout>

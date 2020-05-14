@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="fragment_background_radius">20dp</dimen>
+    <dimen name="stroke_width">5dp</dimen>
+    <dimen name="fragment_background_padding">20dp</dimen>
+    <dimen name="fragmentIconSize">100dp</dimen>
+</resources>
